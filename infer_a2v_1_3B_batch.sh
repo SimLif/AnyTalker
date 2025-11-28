@@ -14,6 +14,4 @@ python generate_a2v_batch_multiID.py \
 		--dit_config="./checkpoints/AnyTalker/config_af2v_1_3B.json" \
 		--det_thresh=0.15 \
 		--mode="pad" \
-		--use_half=True \
-
-
+		--use_half=True 

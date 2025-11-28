@@ -96,10 +96,10 @@ apt-get install ffmpeg
 
 Download models using huggingface-cli:
 ``` sh
-# !pip install -U "huggingface_hub[cli]"
-huggingface-cli download alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP --local-dir ./checkpoints/Wan2.1-Fun-1.3B-Inp
-huggingface-cli download facebook/wav2vec2-base-960h --local-dir ./checkpoints/wav2vec2-base-960h
-huggingface-cli download zzz66/AnyTalker-1.3B --local-dir ./checkpoints/AnyTalker
+# curl -LsSf https://hf.co/cli/install.sh | bash
+hf download alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP --local-dir ./checkpoints/Wan2.1-Fun-1.3B-Inp
+hf download facebook/wav2vec2-base-960h --local-dir ./checkpoints/wav2vec2-base-960h
+hf download zzz66/AnyTalker-1.3B --local-dir ./checkpoints/AnyTalker
 ```
 The directory shoube be organized as follows.
 
@@ -132,8 +132,7 @@ python generate_a2v_batch_multiID.py \
 		--dit_config="./checkpoints/AnyTalker/config_af2v_1_3B.json" \
 		--det_thresh=0.15 \
 		--mode="pad" \
-		--use_half=True \
-
+		--use_half=True 
 ```
 or 
 ```bash
@@ -150,8 +149,9 @@ sh infer_a2v_1_3B_batch.sh
 ```
 
 <p align="center">
-  <img src="assets/pad.png">
-</p>
+  <img src="assets/pad.png"><br>
+  Illustration of “pad” mode for audio inputs.
+</p> 
 
 ## Benchmark
 We provide the benchmark used in our paper to evaluate *Interactivity*, including the dataset and the metric computation script.
