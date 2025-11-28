@@ -3,9 +3,7 @@
 
 <h1>AnyTalker: Scaling Multi-Person Talking Video Generation with Interactivity Refinement</h1>
 
-[Zhizhou Zhong](https://scholar.google.com/citations?user=t88nyvsAAAAJ ) · [Yicheng Ji](https://kongzhecn.github.io) · [Zhe Kong](https://kongzhecn.github.io) · [Yiying Liu*](https://openreview.net/profile?id=~YiYing_Liu1) ·  [Jiarui Wang](https://scholar.google.com/citations?user=g7I2bJ8AAAAJ) · [Jiasun Feng](https://scholar.google.com/citations?hl=zh-CN&user=MGHcudEAAAAJ) ·  [Lupeng Liu](https://openreview.net/profile?id=~Lupeng_Liu2)  · [Xiangyi Wang](https://openreview.net/profile?id=~Xiangyi_Wang6 )  · [Yanjia Li](https://openreview.net/profile?id=~Yanjia_Li1)  · [Yuqing She](https://openreview.net/profile?id=~Yuqing_She1)  · [Ying Qin](https://scholar.google.com/citations?user=6KwG7hYAAAAJ) · [Huan Li](https://scholar.google.com/citations?user=fZoYJz8AAAAJ )
-
-[Shuiyang Mao](https://scholar.google.com/citations?user=YZSd5fsAAAAJ) · [Wei Liu](https://scholar.google.com/citations?user=AjxoEpIAAAAJ) · [Wenhan Luo](https://whluo.github.io/)<sup>&#9993;</sup>
+[Zhizhou Zhong](https://scholar.google.com/citations?user=t88nyvsAAAAJ ) · [Yicheng Ji](https://kongzhecn.github.io) · [Zhe Kong](https://kongzhecn.github.io) · [Yiying Liu*](https://openreview.net/profile?id=~YiYing_Liu1) ·  [Jiarui Wang](https://scholar.google.com/citations?user=g7I2bJ8AAAAJ) · [Jiasun Feng](https://scholar.google.com/citations?hl=zh-CN&user=MGHcudEAAAAJ) ·  [Lupeng Liu](https://openreview.net/profile?id=~Lupeng_Liu2)  · [Xiangyi Wang](https://openreview.net/profile?id=~Xiangyi_Wang6 )  · [Yanjia Li](https://openreview.net/profile?id=~Yanjia_Li1)  · [Yuqing She](https://openreview.net/profile?id=~Yuqing_She1)  · [Ying Qin](https://scholar.google.com/citations?user=6KwG7hYAAAAJ) · [Huan Li](https://scholar.google.com/citations?user=fZoYJz8AAAAJ ) · [Shuiyang Mao](https://scholar.google.com/citations?user=YZSd5fsAAAAJ) · [Wei Liu](https://scholar.google.com/citations?user=AjxoEpIAAAAJ) · [Wenhan Luo](https://whluo.github.io/)<sup>&#9993;</sup>
 
 <sup>*</sup>Project Leader
 <sup>&#9993;</sup>Corresponding Author
@@ -54,7 +52,7 @@
 - [x] Inference code
 - [x] 1.3B Stage 1 Checkpoint (trained exclusively on single-person data)
 - [x] Benchmark for evaluate Interactivity 
-- [x] Technical report (Coming Soon in a few days!) 
+- [ ] Technical report (Coming Soon in a few days!) 
 - [ ] 14B Model (Coming soon to the Video Rebirth Creation Platform)
 
 ## Quick Start
