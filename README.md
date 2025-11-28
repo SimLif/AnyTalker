@@ -12,9 +12,9 @@
 
 
 <a href='https://hkust-c4g.github.io/AnyTalker-homepage/'><img src='https://img.shields.io/badge/Project-Page-green'></a>
-<a href='https://huggingface.co/zzz66/AnyTalker-1.3B/tree/main'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a>
+<a href='https://hkust-c4g.github.io/AnyTalker-homepage/'><img src='https://img.shields.io/badge/Technique-Report-red'></a>
 </div>
-<!-- <a href='https://hkust-c4g.github.io/AnyTalker-homepage/'><img src='https://img.shields.io/badge/Technique-Report-red'></a> -->
+<a href='https://huggingface.co/zzz66/AnyTalker-1.3B/tree/main'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a>
 
 > **TL; DR:**  AnyTalker is an audio-driven framework for generating multi-person talking videos. It features a flexible multi-stream structure to scale identities while ensuring seamless inter-identity interactions. 
 
@@ -24,23 +24,28 @@
 
 ## Video Demos (Generated with the 1.3B model; 14B results [here](https://hkust-c4g.github.io/AnyTalker-homepage/))
 
-<!-- 第一组 -->
-<div style="display:flex; gap:4%; align-items:center; margin-bottom:24px;">
-  <img src="input_example/images/2p-1.png" style="width:48%; aspect-ratio:16/9; object-fit:cover;">
-  <video src="https://github.com/user-attachments/assets/41ed669d-57ed-48dc-9a54-97b2a12dce45" style="width:48%; aspect-ratio:16/9; object-fit:cover;" controls loop></video>
-</div>
-
-<!-- 第二组 -->
-<div style="display:flex; gap:4%; align-items:center; margin-bottom:24px;">
-  <img src="input_example/images/2p-0.png" style="width:48%; aspect-ratio:16/9; object-fit:cover;">
-  <video src="https://github.com/user-attachments/assets/f01afb3f-efeb-4df5-b6bb-1f74cc4f3941" style="width:48%; aspect-ratio:16/9; object-fit:cover;" controls loop></video>
-</div>
-
-<!-- 第三组 -->
-<div style="display:flex; gap:4%; align-items:center;">
-  <img src="input_example/images/1p-0.png" style="width:48%; aspect-ratio:16/9; object-fit:cover;">
-  <video src="https://github.com/user-attachments/assets/ffa3de10-ca6f-4b5f-bb84-8b53646a4751" style="width:48%; aspect-ratio:16/9; object-fit:cover;" controls loop></video>
-</div>
+<table>
+  <thead>
+    <tr>
+      <th>Input Image</th>
+      <th>Generated Video</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="input_example/images/2p-1.png" style="width:100%; aspect-ratio:16/9; object-fit:cover;"></td>
+      <td><video src="https://github.com/user-attachments/assets/41ed669d-57ed-48dc-9a54-97b2a12dce45" style="width:100%; aspect-ratio:16/9; object-fit:cover;" controls loop></video></td>
+    </tr>
+    <tr>
+      <td><img src="input_example/images/2p-0.png" style="width:100%; aspect-ratio:16/9; object-fit:cover;"></td>
+      <td><video src="https://github.com/user-attachments/assets/f01afb3f-efeb-4df5-b6bb-1f74cc4f3941" style="width:100%; aspect-ratio:16/9; object-fit:cover;" controls loop></video></td>
+    </tr>
+    <tr>
+      <td><img src="input_example/images/1p-0.png" style="width:100%; aspect-ratio:16/9; object-fit:cover;"></td>
+      <td><video src="https://github.com/user-attachments/assets/ffa3de10-ca6f-4b5f-bb84-8b53646a4751" style="width:100%; aspect-ratio:16/9; object-fit:cover;" controls loop></video></td>
+    </tr>
+  </tbody>
+</table>
 
 ## 🔥 Latest News
 🔥 *Nov 30, 2025:* We release the **AnyTalker** [weights](#), [inference code](#), [technique-report](#) and [project page](https://hkust-c4g.github.io/AnyTalker-homepage).
@@ -48,8 +53,8 @@
 ## 📑 Todo List
 - [x] Inference code
 - [x] 1.3B Stage 1 Checkpoint (trained exclusively on single-person data)
-- [x] Benchmark for evaluate Interactivity 
-- [ ] Technical report (Coming Soon!)
+- [x] Benchmark for evaluate Interactivity (Release expected in a few days)
+- [x] Technical report (Coming Soon) 
 - [ ] 14B Model (Coming soon to the Video Rebirth Creation Platform)
 
 ## Quick Start
