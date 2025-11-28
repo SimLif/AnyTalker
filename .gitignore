@@ -74,5 +74,5 @@ logs/
 
 checkpoints
 output
-behchmark/frames
-behchmark/videos
+benchmark/frames
+benchmark/videos
