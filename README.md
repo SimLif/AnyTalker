@@ -12,7 +12,7 @@
 
 
 <a href='https://hkust-c4g.github.io/AnyTalker-homepage/'><img src='https://img.shields.io/badge/Project-Page-green'></a>
-<a href='https://hkust-c4g.github.io/AnyTalker-homepage/'><img src='https://img.shields.io/badge/Technique-Report-red'></a>
+<!-- <a href='https://hkust-c4g.github.io/AnyTalker-homepage/'><img src='https://img.shields.io/badge/Technique-Report-red'></a> -->
 <a href='https://huggingface.co/zzz66/AnyTalker-1.3B/tree/main'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a>
 </div>
 
@@ -46,10 +46,10 @@
 🔥 *Nov 30, 2025:* We release the **AnyTalker** [weights](#), [inference code](#), [technique-report](#) and [project page](https://hkust-c4g.github.io/AnyTalker-homepage).
 
 ## 📑 Todo List
-- [x] Technical report
 - [x] Inference code
 - [x] 1.3B Stage 1 Checkpoint (trained exclusively on single-person data)
-- [x] Benchmark for evaluate Interactivity (Release expected in a few days)
+- [x] Benchmark for evaluate Interactivity 
+- [ ] Technical report (Coming Soon!)
 - [ ] 14B Model (Coming soon to the Video Rebirth Creation Platform)
 
 ## Quick Start
@@ -169,7 +169,7 @@ benchmark/
 ├── audio_left            # Audio for left speaker (zero-padded to full length)
 ├── audio_right           # Audio for right speaker (zero-padded to full length)
 ├── speaker_duration.json # Start/end timestamps for each speaker
-├── interact_11.mp4 # Example video 
+├── interact_11.mp4       # Example video 
 └── frames                # Reference image supplied as the first video frame
 ``` 
 #### *Interactivity* evaluation
