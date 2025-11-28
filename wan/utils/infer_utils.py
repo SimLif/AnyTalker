@@ -450,15 +450,12 @@ def gen_inference_masks(masks, img_shape, num_frames=None):
             # 创建多帧mask：所有帧都使用face_mask
             face_mask_multi = mask.unsqueeze(0).unsqueeze(0).repeat(1, 1, F, 1, 1)  # [B, C, F, H, W]
             face_mask_list.append(face_mask_multi)
-            print(f"人脸{i}: mask shape {mask.shape} -> 多帧mask shape {face_mask_multi.shape}")
         
         # 构建concat mask - 将所有mask在宽度方向拼接
         if num_faces > 1:
             face_mask_concat = torch.cat(face_mask_list, dim=4)  # [B, C, F, H, num_faces*W]
-            print(f"拼接后的concat mask shape: {face_mask_concat.shape}")
         else:
             face_mask_concat = face_mask_list[0]
-            print(f"单人模式，concat mask shape: {face_mask_concat.shape}")
         
         return {
             "face_mask_list": face_mask_list,

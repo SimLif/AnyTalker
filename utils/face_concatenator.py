@@ -183,10 +183,6 @@ def read_face_bbox(
             
             # 使用起点的face_center作为默认值（向后兼容）
             face_center = start_face_center
-            print(f"人脸中心点: ({face_center[0]:.1f}, {face_center[1]:.1f})")
-            print(f"原始图像尺寸: {w}x{h}")
-            print(f"起点bbox: [{start_x_min:.1f}, {start_y_min:.1f}, {start_x_max:.1f}, {start_y_max:.1f}]")
-            
             # 计算全局bbox（整个序列的并集）- 使用更高效的实现
             # 获取序列中所有相关帧的bbox
             relevant_start_idx = 0
